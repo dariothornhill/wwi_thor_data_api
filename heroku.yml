@@ -4,4 +4,4 @@ build:
 release:
   image: web
 run:
-  web: gunicorn geodjango.wsgi
+  web: gunicorn geodjango.wsgi:application
