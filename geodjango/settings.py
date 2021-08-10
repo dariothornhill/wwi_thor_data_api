@@ -98,12 +98,13 @@ DATABASES = {
         'HOST': env('DATABASE_HOST'),
         'PORT': env('DATABASE_PORT')
     },
-} if env(DB_TYPE) == 'postgis' else {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
 }
+# } if env(DB_TYPE) == 'postgis' else {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation

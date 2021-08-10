@@ -11,6 +11,8 @@ services:
             - 8000:8000
         volumes:
             - .:/code
+        environment:
+            - DB_TYPE=postgis
     db:
         image: kartoza/postgis:13-3.1
         volumes:
