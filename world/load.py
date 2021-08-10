@@ -78,6 +78,39 @@ def import_missions():
     "WWI_ID", "MSNDATE", "OPERATION", "COUNTRY", "SERVICE", "UNIT", "MDS", "MISSIONNUM", "DEPARTURE", "TAKEOFFTIME", "NUMBEROFPLANESATTACKING", "CALLSIGN", "WEAPONSEXPENDED", "WEAPONTYPE", "WEAPONWEIGHT", "BOMBLOAD", "LATITUDE", "LONGITUDE", "TGTLOCATION", "TGTCOUNTRY", "TGTTYPE", "TAKEOFFBASE", "TAKEOFFLATITUDE", "TAKEOFFLONGITUDE", "BDA", "ENEMYACTION", "ROUTEDETAILS", "ISRCOLLECTED", "FRIENDLYCASUALTIES", "FRIENDLYCASUALTIES_VERBOSE", "WEATHER", "ALTITUDE"
     mission_csv["INDEX"] = mission_csv["WWI_ID"]
     mission_csv.set_index("INDEX", inplace=True)
+
+    mission_csv["WEAPONSEXPENDED"].fillna(-1, inplace=True)
+    mission_csv["WEAPONWEIGHT"].fillna(-1, inplace=True)
+    mission_csv["BOMBLOAD"].fillna(-1, inplace=True)
+    mission_csv["LATITUDE"].fillna(0, inplace=True)
+    mission_csv["LONGITUDE"].fillna(0, inplace=True)
+    mission_csv["TAKEOFFLATITUDE"].fillna(0, inplace=True)
+    mission_csv["TAKEOFFLONGITUDE"].fillna(0, inplace=True)
+    mission_csv["FRIENDLYCASUALTIES"].fillna(-1, inplace=True)
+    mission_csv["ALTITUDE"].fillna(-1, inplace=True)
+    mission_csv["NUMBEROFPLANESATTACKING"].fillna(-1, inplace=True)
+    mission_csv["MSNDATE"].fillna('Unknown', inplace=True)
+    mission_csv["OPERATION"].fillna('Unknown', inplace=True)
+    mission_csv["COUNTRY"].fillna('Unknown', inplace=True)
+    mission_csv["SERVICE"].fillna('Unknown', inplace=True)
+    mission_csv["UNIT"].fillna('Unknown', inplace=True)
+    mission_csv["MDS"].fillna('Unknown', inplace=True)
+    mission_csv["MISSIONNUM"].fillna(-1, inplace=True)
+    mission_csv["DEPARTURE"].fillna('Unknown', inplace=True)
+    mission_csv["TAKEOFFTIME"].fillna('Unknown', inplace=True)
+    mission_csv["CALLSIGN"].fillna('Unknown', inplace=True)
+    mission_csv["WEAPONTYPE"].fillna('Unknown', inplace=True)
+    mission_csv["TGTLOCATION"].fillna('Unknown', inplace=True)
+    mission_csv["TGTCOUNTRY"].fillna('Unknown', inplace=True)
+    mission_csv["TGTTYPE"].fillna('Unknown', inplace=True)
+    mission_csv["TAKEOFFBASE"].fillna('Unknown', inplace=True)
+    mission_csv["BDA"].fillna('Unknown', inplace=True)
+    mission_csv["ENEMYACTION"].fillna('Unknown', inplace=True)
+    mission_csv["ROUTEDETAILS"].fillna('Unknown', inplace=True)
+    mission_csv["ISRCOLLECTED"].fillna('Unknown', inplace=True)
+    mission_csv["FRIENDLYCASUALTIES_VERBOSE"].fillna('Unknown', inplace=True)
+    mission_csv["WEATHER"].fillna('Unknown', inplace=True)
+
     missions = [
         Mission(
             wwi_id=mission_csv.loc[row]["WWI_ID"],
