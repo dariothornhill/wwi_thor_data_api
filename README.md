@@ -51,3 +51,9 @@ cat geodjango/.env | xargs heroku config:set
 ```
 git push heroku main
 ```
+
+8. Migrate and load data
+
+```
+heroku run python manage.py < seed.py
+```
