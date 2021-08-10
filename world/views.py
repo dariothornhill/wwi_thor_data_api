@@ -6,11 +6,14 @@ from .serializers import (
     WeaponSerializer,
     WorldBorderSerializer,
 )
-from django_filters import rest_framework as filters 
+from django_filters import rest_framework as filters
+
 
 class WorldBorderList(ListAPIView):
     queryset = WorldBorder.objects.all()
     serializer_class = WorldBorderSerializer
+    filter_backends = [filters.DjangoFilterBackend]
+    filterset_fields = ["year", "area", "name", "abbrevname", "fips_code", "wb_cntry"]
 
 class MissionList(ListAPIView):
     queryset = Mission.objects.all()

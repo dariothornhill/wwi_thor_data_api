@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "f922932d-2b74-4b4f-914c-db8446d57cae",
+		"name": "GeoJson",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Missions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/missions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"missions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Borders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/borders/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"borders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Aircraft",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/aircraft/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"aircraft",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Weapons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/aircraft/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"aircraft",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Live Weapons ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://wwi-thor-api.herokuapp.com/api/v1/weapons/",
+					"protocol": "http",
+					"host": [
+						"wwi-thor-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"weapons",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Live Aircraft",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://wwi-thor-api.herokuapp.com/api/v1/aircraft/",
+					"protocol": "http",
+					"host": [
+						"wwi-thor-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"aircraft",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Live Borders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://wwi-thor-api.herokuapp.com/api/v1/borders/",
+					"protocol": "http",
+					"host": [
+						"wwi-thor-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"borders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Live Missions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://wwi-thor-api.herokuapp.com/api/v1/missions/",
+					"protocol": "http",
+					"host": [
+						"wwi-thor-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"missions",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
