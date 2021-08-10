@@ -3,6 +3,7 @@
 ## WWI THOR and World Borders 1880, 1914, 1920
 
 ## Endpoints
+Live url: https://wwi-thor-api.herokuapp.com
 
 /api/v1/borders/
 /api/v1/missions/
@@ -55,5 +56,6 @@ git push heroku main
 8. Migrate and load data
 
 ```
-heroku run python manage.py < seed.py
+heroku run python manage.py migrate
+heroku run python manage.py shell < seed.py
 ```
