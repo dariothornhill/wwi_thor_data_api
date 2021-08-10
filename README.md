@@ -47,3 +47,7 @@ cat geodjango/.env | xargs heroku config:set
 ```
 
 7. [Deploy](https://devcenter.heroku.com/articles/deploying-django)
+
+```
+git push heroku main
+```
