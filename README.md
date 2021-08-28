@@ -5,14 +5,17 @@
 ## Endpoints
 Live url: https://wwi-thor-api.herokuapp.com
 
+```
 /api/v1/borders/
 /api/v1/missions/
 /api/v1/aircraft/
 /api/v1/weapons/
+```
+## Getting Started
 
-## Deployment to your own heroku stack
+### Deployment to your own heroku stack
 
-1. create an account on [heroku.com0](https://heroku.com)
+1. create an account on [heroku.com](https://heroku.com)
 
 2. install [heroku cli](https://devcenter.heroku.com/articles/heroku-cli)
 
